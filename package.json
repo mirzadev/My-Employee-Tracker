@@ -1,0 +1,35 @@
+{
+  "name": "my-employee-tracker",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">My Employee Tracker 👋</h1>",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirzadev/My-Employee-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirzadev/My-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/mirzadev/My-Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.3.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
