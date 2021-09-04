@@ -1,38 +1,26 @@
 <h1 align="center">My Employee Tracker 👋</h1>
   
-<p align="center">
-    <a href="https://github.com/mirzadev">
-    
-</p>
-  
-<p align="center">
-    <img src="https://img.shields.io/badge/Javascript-yellow" />
-    <img src="https://img.shields.io/badge/jQuery-blue"  />
-    <img src="https://img.shields.io/badge/-node.js-green" />
-    <img src="https://img.shields.io/badge/-inquirer-red" >
-    <img src="https://img.shields.io/badge/-screencastify-lightgrey" />
-    <img src="https://img.shields.io/badge/-json-orange" />
-    <img src="https://img.shields.io/badge/mySQL-blue"  />
-    <img src="https://img.shields.io/badge/inquirer-green" />
-</p>
-   
+
 ## Description
 
-🔍 A node.js application that uses user input from inquirer to populate an employee tracker database displaying members of a company.
+My-Employee-Tracker is an application aimed to assidt the company to keep track of the employees including HR activities, technology and financial aspects. Using this application, one can easily keep track of own company employees. Using this application, the management people would be able to view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. This application is created using the mysql database which is connected with the application through node.js.A VDO clip is attached in the Asset folder of this project as shown below:
 
-![DeWoody Employee Tracker](./assets/title.PNG)
-  
-💻 Below is the gif showing the functionality of the application:
-  
-![DeWoody Employee Tracker](./assets/employee-tracker.gif)
-  
-🎥 The full movie file showing functionality of the application can be found [here](./assets/employee-tracker.webm)  
-  
+![My Employee Tracker](./Assets/Screen-Shot-1.JPG)
+![My Employee Tracker](./Assets/Screen-Shot-2.JPG)
+![My Employee Tracker](./Assets/Screen-Shot-3.JPG)
+
+## Overview Links
+
+- \*[Employee Tracker Overview in youtube](https://www.youtube.com/watch?v=Dh70lCLOq8M)
+- \*[GitHub Repository](https://github.com/mirzadev/Employee-Tracker)
+
 ## Table of Contents
+
 - [Description](#description)
+- [Overview Links](#overview-links)
+- [Table of Contents](#table-of-contents)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
@@ -84,8 +72,6 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 `npm install chalk`
 
-`npm install nodemon`
-
 `npm install validator`
   
 ## Usage
@@ -99,7 +85,7 @@ Run the following command at the root of your project and answer the prompted qu
 ✏️
 
 Testing is done by JEST.
-
+:Testing Link: [Click the Link](https://drive.google.com/file/d/1k6TxRsdL8NNhRdPMgPWxdoK6X0ArTUUu/view)
 ## Contributing
 :octocat: [Mirza Awal](https://github.com/mirzadev)
 

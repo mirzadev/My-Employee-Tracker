@@ -146,7 +146,7 @@ db.query(sql, (err, res) => {
     if (err) throw err;
     res.forEach((role) => {console.table(role.title);});
     console.log(chalk.green.bold(`=================================================================================================`));
-    promptUser;
+    promptUser();
 });
     
 };
@@ -165,7 +165,7 @@ const viewAllEmployees = () => {
                     AND 
                     role.id = employee.role_id
                     ORDER BY employee.id ASC`;
-    db.query(sql, (err, res) => {
+      db.query(sql, (err, res) => {
       if (err) throw err;      
       
       console.table(res);
@@ -418,10 +418,9 @@ const updateEmployeeRole = () =>{
 
 // Update Employee Manager
 const updateEmployeeManager = () => {
-  let sql =  `SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id
-                  FROM employee`;
+  let sql =  `SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id FROM employee`;
+                  
    db.query(sql, (err, res) => {
-     if (err) throw err;
     let employeeNamesArray = [];
     res.forEach((employee) => {employeeNamesArray.push(`${employee.first_name} ${employee.last_name}`);});
 
@@ -458,16 +457,16 @@ const updateEmployeeManager = () => {
 
         if (validate.isSame(answer.chosenEmployee, answer.newManager)) {
           console.log(chalk.redBright.bold(`====================================================================================`));
-          console.log(chalk.redBright(`                 `+`Invalid Manager Selection`));
+          console.log(chalk.redBright(`                     `+`Invalid Manager Selection`));
           console.log(chalk.redBright.bold(`====================================================================================`));
           promptUser();
         } else {
           let sql = `UPDATE employee SET employee.manager_id = ? WHERE employee.id = ?`;
 
-          db.query(sql,[managerId, employeeId],(err) => {
+          db.query(sql, [managerId, employeeId], (err) => {
               if (err) throw err;
               console.log(chalk.greenBright.bold(`====================================================================================`));
-              console.log(chalk.greenBright(`                   `+`Employee Manager Updated`));
+              console.log(chalk.greenBright(`                     `+`Employee Manager Updated`));
               console.log(chalk.greenBright.bold(`====================================================================================`));
               promptUser();
             }
@@ -479,13 +478,21 @@ const updateEmployeeManager = () => {
 
 
 // View Employees By Manager
-
-
-
-
-
-
-
+const viewEmployeesByManager = () => {
+  const sql =     `SELECT CONCAT(employee.first_name,' ',employee.last_name)AS Employee,role.title 
+                  AS Role,CONCAT(e.first_name,' ',e.last_name)AS Manager FROM employee JOIN role 
+                  ON role.id=employee.role_id LEFT JOIN employee e ON e.id=employee.manager_id 
+                  WHERE employee.manager_id IS NOT NULL`;
+  db.query(sql, (err, res) => {
+    if (err) throw err;
+      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.log(`                              ` + chalk.green.bold(`Employees by Manager:`));
+      console.log(chalk.yellow.bold(`====================================================================================`));
+      console.table(res);
+      console.log(chalk.yellow.bold(`====================================================================================`));
+      promptUser();
+    });
+};
 
 // View Employees By Department
 const viewEmployeesByDepartment = () => {
@@ -531,8 +538,8 @@ const removeDepartment = () => {
         });
 
         let sql =     `DELETE FROM department WHERE department.id = ?`;
-        db.query(sql, [departmentId], (error) => {
-          if (error) throw error;
+        db.query(sql, [departmentId], (err) => {
+          if (err) throw err;
           console.log(chalk.redBright.bold(`====================================================================================`));
           console.log(chalk.redBright(`                     `+`Department Successfully Removed`));
           console.log(chalk.redBright.bold(`====================================================================================`));
@@ -543,7 +550,7 @@ const removeDepartment = () => {
 };
 
 
-// Remove Roles
+// Remove Role
 const removeRole = () => {
   let sql = `SELECT role.id, role.title FROM role`;
 
@@ -642,16 +649,6 @@ const viewDepartmentBudget = () => {
       promptUser();
   });
 };
-
-
-
-
-
-
-
-
-
-
 
 // Exit function
 function quit() {
