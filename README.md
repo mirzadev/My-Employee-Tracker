@@ -5,9 +5,10 @@
 
 My-Employee-Tracker is an application aimed to assidt the company to keep track of the employees including HR activities, technology and financial aspects. Using this application, one can easily keep track of own company employees. Using this application, the management people would be able to view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. This application is created using the mysql database which is connected with the application through node.js.A VDO clip is attached in the Asset folder of this project as shown below:
 
-![My Employee Tracker](./Assets/Screen-Shot-1.JPG)
-![My Employee Tracker](./Assets/Screen-Shot-2.JPG)
-![My Employee Tracker](./Assets/Screen-Shot-3.JPG)
+![My Employee Tracker-1](./Assets/Screen-Shot-1.JPG)
+![My Employee Tracker-2](./Assets/Screen-Shot-2.JPG)
+![My Employee Tracker-3](./Assets/Screen-Shot-3.JPG)
+![My Employee Tracker-gif](./Assets/my-employee-tracker-gif.gif)
 
 ## Overview Links
 
