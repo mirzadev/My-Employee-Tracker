@@ -13,7 +13,7 @@ My-Employee-Tracker is an application aimed to assidt the company to keep track 
 ## Overview Links
 
 - \*[Employee Tracker Overview in youtube](https://www.youtube.com/watch?v=Dh70lCLOq8M)
-- \*[GitHub Repository](https://github.com/mirzadev/Employee-Tracker)
+- \*[GitHub Repository](https://mirzadev.github.io/Employee-Tracker/)
 
 ## Table of Contents
 
@@ -88,7 +88,7 @@ Run the following command at the root of your project and answer the prompted qu
 Testing is done by JEST.
 :Testing Link: [Click the Link](https://drive.google.com/file/d/1k6TxRsdL8NNhRdPMgPWxdoK6X0ArTUUu/view)
 ## Contributing
-:octocat: [Mirza Awal](https://github.com/mirzadev)
+:My Git Hub Link: [Mirza Awal](https://github.com/mirzadev)
 
 ## Questions
 ✉️ Contact me with any questions: [email](mailto:awal.mirza2016@gmail.com) , [GitHub](https://github.com/mirzadev)<br />
