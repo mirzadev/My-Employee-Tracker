@@ -14,7 +14,7 @@ My-Employee-Tracker is an application aimed to assidt the company to keep track 
 ## Overview Links
 
 - \*[Employee Tracker Overview in youtube](https://www.youtube.com/watch?v=jaZq0-eY0DU)
-- \*[GitHub Repository](https://mirzadev.github.io/Employee-Tracker/)
+- \*[GitHub Repository](https://github.com/mirzadev/My-Employee-Tracker)
 
 ## Table of Contents
 
